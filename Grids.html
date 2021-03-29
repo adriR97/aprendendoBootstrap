@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+	Info: O sistema de grade permite até 12 colunas na página.
+	O sistema é responsivo e as colunas são organizadas conforme o tamanho da tela
+	
+	Classes de grade:
+	.col- (largura da tela menor que 576 px)
+	.col-sm- (largura da tela igual ou superior a 576 px)
+	.col-md- (largura da tela igual ou superior a 768 px)
+	.col-lg- (largura da tela igual ou superior a 992 px)
+	.col-xl- (largura da tela igual ou superior a 1200 px)
+-->
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<br><h4>Exemplo de três colunas de tamanho igual:</h4><br>
+			<div class="row" >				
+				<div class="col" style="background-color:#ff99ff;">.col</div>
+				<div class="col" style="background-color:#ff66ff;">.col</div>
+				<div class="col" style="background-color:#ff33ff;">.col</div>
+			</div>
+			
+			<br><h4>Exemplo de 4 colunas de tamanho igual, se o tamanho da tela for menor que 576px as colunas serão empilhadas:</h4><br>
+			<div class="row" >				
+				<div class="col-sm-3" style="background-color:#ccccff;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:#9999ff;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:#6666ff;">.col-sm-3</div>
+				<div class="col-sm-3" style="background-color:#3333ff;">.col-sm-3</div>
+			</div>
+			
+			<br><h4>Exemplo de duas colunas de tamanho diferente:</h4><br>
+			<div class="row" >				
+				<div class="col-sm-4" style="background-color:#99ff99;">.col-sm-4</div>
+				<div class="col-sm-8" style="background-color:#33ff33;">.col-sm-8</div>
+			</div>
+		</div>
+	</body>
+</html>
