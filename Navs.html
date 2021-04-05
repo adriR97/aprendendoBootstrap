@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Manu básico horizontal:</h4><br>
+			<ul class="nav">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>
+			
+			<br><h4>Manu básico centro:</h4><br>
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>
+
+			<br><h4>Manu básico direita:</h4><br>
+			<ul class="nav justify-content-end">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>	
+			
+			<br><h4>Manu básico vertical:</h4><br>
+			<ul class="nav flex-column">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>
+			
+			<br><h4>Abas:</h4><br>
+			<ul class="nav nav-tabs">
+				<li class="nav-item"><a class="nav-link active" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>
+			
+			<br><h4>Abas iguais:</h4><br>
+			<ul class="nav nav-tabs nav-justified">
+				<li class="nav-item"><a class="nav-link active" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Link 3 desabilitado</a></li>
+			</ul><br>
+			
+			<br><h4>Nav com lista suspensa:</h4><br>
+			<ul class="nav nav-tabs">
+				<li class="nav-item"><a class="nav-link active" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link 4</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Opção 1</a>
+						<a class="dropdown-item" href="#">Opção 2</a>
+						<a class="dropdown-item" href="#">Opção 3</a>
+					</div>
+				</li>				
+			</ul><br>
+			
+			<br><h4>Guias alternáveis:</h4><br>
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu1">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Link 3</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="container tab-pane active">
+					<br>
+					<h5>HOME</h5>
+					<p>Demonstração de guias alternáveis na página inicial</p>
+				</div>
+				<div id="menu1" class="container tab-pane fade">
+					<br>
+					<h5>LINK 2</h5>
+					<p>Demonstração de guias alternáveis na página do link 2</p>
+				</div>
+				<div id="menu2" class="container tab-pane fade">
+					<br>
+					<h5>LINK 3</h5>
+					<p>Demonstração de guias alternáveis na página do link 3</p>
+				</div>
+			</div><br>
+			
+			<br><h4>Guias alternáveis com pills:</h4><br>
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#homepills">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menupills1">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link" data-toggle="pill" href="#menupills2">Link 3</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="homepills" class="container tab-pane active">
+					<br>
+					<h5>HOME</h5>
+					<p>Demonstração de guias alternáveis na página inicial</p>
+				</div>
+				<div id="menupills1" class="container tab-pane fade">
+					<br>
+					<h5>LINK 2</h5>
+					<p>Demonstração de guias alternáveis na página do link 2</p>
+				</div>
+				<div id="menupills2" class="container tab-pane fade">
+					<br>
+					<h5>LINK 3</h5>
+					<p>Demonstração de guias alternáveis na página do link 3</p>
+				</div>
+			</div><br>			
+		</div>	
+	</body>
+</html>

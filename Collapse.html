@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Simples:</h4><br>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Básico</button>
+			<div id="demo" class="collapse">
+				Texto escondido
+			</div><br>
+			
+			<br><h4>Exemplo de collapse simples com a tag a:</h4><br>
+			<a href="#demo2" class="btn btn-primary" data-toggle="collapse">Básico</a>
+			<div id="demo2" class="collapse">
+				Texto escondido
+			</div><br>
+			
+			<br><h4>Collapse show:</h4><br>
+			<a href="#demo3" class="btn btn-primary" data-toggle="collapse">Básico</a>
+			<div id="demo3" class="collapse show">
+				Texto escondido
+			</div><br>
+			
+			<br><h4>Accordion:</h4><br>
+			<div id="accordion">
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseUm">
+							Card 1
+						</a>
+					</div>
+					<div id="collapseUm" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Texto de exemplo do card 1
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseDois">
+							Card 2
+						</a>
+					</div>
+					<div id="collapseDois" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Texto de exemplo do card 2
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<a class="card-link" data-toggle="collapse" href="#collapseTres">
+							Card 3
+						</a>
+					</div>
+					<div id="collapseTres" class="collapse" data-parent="#accordion">
+						<div class="card-body">
+							Texto de exemplo do card 3
+						</div>
+					</div>
+				</div>
+			</div><br><br><br>			
+		</div>	
+	</body>
+</html>

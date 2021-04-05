@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Dropdown básico:</h4><br>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Opção 1</a>
+					<a class="dropdown-item" href="#">Opção 2</a>
+					<a class="dropdown-item" href="#">Opção 3</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Divisor de links:</h4><br>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Opção 1</a>
+					<a class="dropdown-item" href="#">Opção 2</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Outro tipo de opção 1</a>
+					<a class="dropdown-item" href="#">Outro tipo de opção 2</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Cabeçalhos:</h4><br>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu">
+					<h5 class="dropdown-header">Instrumentos de corda</h5>
+					<a class="dropdown-item" href="#">Guitarra</a>
+					<a class="dropdown-item" href="#">Violão</a>
+					<a class="dropdown-item" href="#">Baixo</a>
+					<h5 class="dropdown-header">Instrumentos de percussão</h5>
+					<a class="dropdown-item" href="#">Bateria</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Link ativo e desabilitado:</h4><br>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Normal</a>
+					<a class="dropdown-item disabled" href="#">Desabilitado</a>
+					<a class="dropdown-item active" href="#">Ativo</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Droproght e dropleft:</h4><br>
+			<div class="row" >	
+				<div class="dropdown dropright col-sm-6">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Opções
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Opção 1</a>
+						<a class="dropdown-item" href="#">Opção 2</a>
+						<a class="dropdown-item" href="#">Opção 3</a>
+					</div>
+				</div>
+				<div class="dropdown dropleft col-sm-6">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Opções
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Opção 1</a>
+						<a class="dropdown-item" href="#">Opção 2</a>
+						<a class="dropdown-item" href="#">Opção 3</a>
+					</div>
+				</div><br>
+			</div><br>
+			
+			<br><h4>Alinhando dropdown-menu à direita:</h4><br>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item" href="#">Opção 1</a>
+					<a class="dropdown-item" href="#">Opção 2</a>
+					<a class="dropdown-item" href="#">Opção 3</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Dropup:</h4><br>
+			<div class="dropup">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Opções
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Opção 1</a>
+					<a class="dropdown-item" href="#">Opção 2</a>
+				</div>
+			</div><br>
+			
+			<br><h4>Botões agrupados com dropdown:</h4><br>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary">Botão 1</button>
+				<button type="button" class="btn btn-primary">Botão 2</button>
+				<div class="dropdown">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Opções
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Opção 1</a>
+						<a class="dropdown-item" href="#">Opção 2</a>
+					</div>
+				</div>
+			</div><br>
+			
+			<br><h4>Dropdown Split Button:</h4><br>
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary">Primário</button>
+				<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-secondary">Secundário</button>
+				<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-success">Sucesso</button>
+				<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-info">Informação</button>
+				<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-warning">Atenção</button>
+				<button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-danger">Perigo</button>
+				<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Link 1</a>
+					<a class="dropdown-item" href="#">Link 2</a>
+				</div>
+			</div><br><br><br><br><br>
+		</div>	
+	</body>
+</html>
