@@ -7,6 +7,14 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>	
 	</head>
 	<body>
 		<div class="container">
@@ -14,20 +22,26 @@
 			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Básico</button>
 			<div id="demo" class="collapse">
 				Texto escondido
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Exemplo de collapse simples com a tag a:</h4><br>
 			<a href="#demo2" class="btn btn-primary" data-toggle="collapse">Básico</a>
 			<div id="demo2" class="collapse">
 				Texto escondido
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Collapse show:</h4><br>
 			<a href="#demo3" class="btn btn-primary" data-toggle="collapse">Básico</a>
 			<div id="demo3" class="collapse show">
 				Texto escondido
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Accordion:</h4><br>
 			<div id="accordion">
 				<div class="card">
@@ -66,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-			</div><br><br><br>			
-		</div>	
+			</div>
+		</div><br>
 	</body>
 </html>

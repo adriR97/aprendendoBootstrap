@@ -3,17 +3,28 @@
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
 			<br><h4>Cabeçalho e Rodapé:</h4><br>
 			<div class="card-header">Cabeçalho</div>
 			<div class="card-body">Conteúdo</div>
-			<div class="card-footer">Rodapé</div><br>
-			
+			<div class="card-footer">Rodapé</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Cards Contextuais:</h4><br>
 			<div class="card">
 				<div class="card-body">Card Básico</div>
@@ -41,8 +52,10 @@
 			</div>
 			<div class="card bg-light">
 				<div class="card-body">Card Light</div>
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Cards com texto, link e título:</h4><br>
 			<div class="card">
 				<div class="card-body">
@@ -50,8 +63,10 @@
 					<p class="card-text">Texto exemplo.</p>
 					<a href="#" class="card-link">Card link</a>
 				</div>
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Cards com imagem:</h4><br>
 			<div class="card" style="width:400px">
 				<img class="card-img-top" src="imagens/yoda.jpg" alt="Card image" style="width:100%">
@@ -68,8 +83,10 @@
 					<a href="#" class="btn btn-primary">Ver Perfil</a>
 				</div>
 				<img class="card-img-bottom" src="imagens/yoda.jpg" alt="Card image" style="width:100%">
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Grid Cards:</h4><br>
 			<div class="card-columns">
 				<div class="card bg-primary">
@@ -90,8 +107,10 @@
 				<div class="card bg-secondary">
 					<div class="card-body text-center">Card Secundário</div>
 				</div>
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Cards Deck:</h4><br>
 			<div class="card-deck">
 				<div class="card bg-primary">
@@ -110,8 +129,10 @@
 				<div class="card bg-danger">
 					<div class="card-body text-center"><p class="card-text">Card 4</p></div>
 				</div>
-			</div><br>
-			
+			</div>
+		</div>
+		
+		<div class="container">
 			<br><h4>Grupo de cards:</h4><br>
 			<div class="card-group">
 				<div class="card bg-primary">
@@ -130,7 +151,7 @@
 				<div class="card bg-danger">
 					<div class="card-body text-center"><p class="card-text">Card 4</p></div>
 				</div>
-			</div><br>
-		</div>	
+			</div>
+		</div><br>
 	</body>
 </html>

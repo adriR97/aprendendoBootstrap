@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Texto:</h4><br>	
+			
+			<div class="form-group">
+				<label for="user">Nome:</label>
+				<input type="text" class="form-control" id="user" name="username">
+			</div>
+		</div>
+
+		<div class="container">
+			<br><h4>Senha:</h4><br>	
+			
+			<div class="form-group">
+				<label for="senha">Senha:</label>
+				<input type="password" class="form-control" id="senha" name="password">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Área de texto:</h4><br>	
+			
+			<div class="form-group">
+				<label for="texto">Comentário:</label>
+				<textarea class="form-control" rows="5" id="texto"></textarea>
+			</div>
+		</div>	
+
+		<div class="container">
+			<br><h4>Checkbox:</h4><br>	
+			
+			<!-- Vertical -->
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label" for="check1">
+						<input type="checkbox" class="form-check-input" id="check1" name="option1" value="habilitado" checked>Habilitado
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label" for="check2">
+						<input type="checkbox" class="form-check-input" id="check2" name="option2" value="normal">Normal
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input" disabled>Desabilitado
+					</label>
+				</div>
+			</div><br>
+			
+			<!-- Horizontal -->
+			<div class="form-check-inline">
+				<label class="form-check-label" for="check1">
+					<input type="checkbox" class="form-check-input" id="check1" name="option1" value="habilitado" checked>Habilitado
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label" for="check2">
+					<input type="checkbox" class="form-check-input" id="check2" name="option2" value="normal">Normal
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input" disabled>Desabilitado
+				</label>
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Radio:</h4><br>	
+			
+			<!-- Vertical -->
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label" for="radio1">
+						<input type="radio" class="form-check-input" id="radio1" name="option1" value="habilitado" checked>Habilitado
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label" for="radio2">
+						<input type="radio" class="form-check-input" id="radio2" name="option2" value="normal">Normal
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" disabled>Desabilitado
+					</label>
+				</div>
+			</div><br>
+			
+			<!-- Horizontal -->
+			<div class="form-check-inline">
+				<label class="form-check-label" for="radioinline1">
+					<input type="radio" class="form-check-input" id="radioinline1" name="optioninline1" value="habilitado" checked>Habilitado
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label" for="radioinline2">
+					<input type="radio" class="form-check-input" id="radioinline2" name="optioninline2" value="normal">Normal
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" disabled>Desabilitado
+				</label>
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Lista de seleção:</h4><br>
+			
+			<div class="form-group">
+				<label for="lista1">Seleção única:</label>
+				<select class="form-control" id="lista1" name="listaOpcoes">
+					<option>Opção 1</option>
+					<option>Opção 2</option>
+					<option>Opção 3</option>
+					<option>Opção 4</option>
+				</select><br>
+				
+				<label for="lista2">Seleção múltipla (Pressionar shift para seleção múltipla):</label>
+				<select multiple class="form-control" id="lista2" name="listaOpcoes2">
+					<option>Opção 1</option>
+					<option>Opção 2</option>
+					<option>Opção 3</option>
+					<option>Opção 4</option>
+				</select>
+			</div>		
+		</div>
+		
+		<div class="container">
+			<br><h4>Tamanho dos inputs:</h4><br>
+			
+			<div class="form-group">
+				<input type="text" class="form-control form-control-sm" placeholder="Campo pequeno" name="text1">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Campo normal" name="text2">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control form-control-lg" placeholder="Campo grande" name="text3">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Controle de intervalo:</h4><br>
+			
+			<div class="form-group">
+				<input type="range" class="form-control-range" name="range">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Arquivos:</h4><br>
+			
+			<div class="form-group">
+				<input type="file" class="form-control-file border" name="file">
+			</div>
+		</div><br>
+	</body>
+</html>

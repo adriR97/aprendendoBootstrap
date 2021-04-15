@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Checkbox:</h4><br>	
+			
+			<!-- Bootstrap 4 -->			
+			<div class="custom-control custom-checkbox mb-3">
+				<input type="checkbox" class="custom-control-input" id="customCheck" name="customCheck">
+				<label class="custom-control-label" for="customCheck">Checkbox personalizado BS4</label>
+			</div>
+			
+			<!-- Default -->			
+			<input type="checkbox" id="defaultCheck" name="defaultCheck">
+			<label for="defaultCheck">Checkbox Default</label>			
+		</div>
+		
+		<div class="container">
+			<br><h4>Switch:</h4><br>
+
+			<!-- Bootstrap 4 -->			
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="customSwitch" name="customSwitch">
+				<label class="custom-control-label" for="customSwitch">Switch personalizado BS4</label>
+			</div>		
+		</div>
+		
+		<div class="container">
+			<br><h4>Radio:</h4><br>	
+			
+			<!-- Bootstrap 4 -->			
+			<div class="custom-control custom-radio">
+				<input type="radio" class="custom-control-input" id="customRadio" name="customRadio">
+				<label class="custom-control-label" for="customRadio">Radio personalizado BS4</label>
+			</div>
+			
+			<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" class="custom-control-input" id="customRadioInline1" name="customRadioInline1">
+				<label class="custom-control-label" for="customRadioInline1">Radio personalizado inline 1 BS4</label>
+			</div>
+			<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" class="custom-control-input" id="customRadioInline2" name="customRadioInline2">
+				<label class="custom-control-label" for="customRadioInline2">Radio personalizado inline 2 BS4</label>
+			</div><br>
+			
+			<!-- Default -->			
+			<input type="radio" id="defaultRadio" name="defaultRadio">
+			<label for="defaultRadio">Radio Default</label>			
+		</div>
+		
+		<div class="container">
+			<br><h4>Menu de seleção:</h4><br>	
+			
+			<!-- Bootstrap 4 -->			
+			<select name="customSelectSmall" class="custom-select mb-3 custom-select-sm">
+				<option selected>Menu de seleção personalizado pequeno BS4</option>
+				<option value="opcao1">Opção 1</option>
+				<option value="opcao2">Opção 2</option>
+				<option value="opcao3">Opção 3</option>
+			</select>			
+			<select name="customSelectNormal" class="custom-select mb-3">
+				<option selected>Menu de seleção personalizado normal BS4</option>
+				<option value="opcao1">Opção 1</option>
+				<option value="opcao2">Opção 2</option>
+				<option value="opcao3">Opção 3</option>
+			</select>
+			<select name="customSelectLarge" class="custom-select mb-3 custom-select-lg">
+				<option selected>Menu de seleção personalizado grande BS4</option>
+				<option value="opcao1">Opção 1</option>
+				<option value="opcao2">Opção 2</option>
+				<option value="opcao3">Opção 3</option>
+			</select>
+			
+			<!-- Default -->			
+			<select name="defaultSelect">
+				<option selected>Menu de seleção default</option>
+				<option value="opcao1">Opção 1</option>
+				<option value="opcao2">Opção 2</option>
+				<option value="opcao3">Opção 3</option>
+			</select>
+		</div>
+		
+		<div class="container">
+			<br><h4>Controle de intervalo:</h4><br>	
+			
+			<!-- Bootstrap 4 -->			
+			<label for="customRange">Controle de intervalo personalizado BS4</label>
+			<input type="range" class="custom-range" id="customRange" name="customRange">
+			
+			<!-- Default -->			
+			<label for="defaultRange">Controle de intervalo default</label><br>
+			<input type="range" id="defaultRange" name="defaultRange">		
+		</div>
+		
+		<div class="container">
+			<br><h4>Entrada de arquivos:</h4><br>	
+			
+			<!-- Bootstrap 4 -->	
+			<p>Entrada de arquivos personalizada BS4:</p>
+			<div class="custom-file mb-3">
+				<input type="file" class="custom-file-input" id="customFile" name="customFile">
+				<label class="custom-file-label" for="customFile">Procurar arquivo</label>
+			</div>
+			
+			<!-- Default -->
+			<p>Entrada de arquivos default:</p>			
+			<input type="file" id="defaultFile" name="defaultFile">
+		</div><br>
+	</body>
+</html>

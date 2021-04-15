@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.carousel-inner img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Carrossel Básico:</h4><br>	
+			
+			<div id="basico" class="carousel slide" data-ride="carousel">
+				<!-- Indicadores -->
+				<ul class="carousel-indicators">
+					<li data-target="#basico" data-slide-to="0" class="active"></li>
+					<li data-target="#basico" data-slide-to="1"></li>
+					<li data-target="#basico" data-slide-to="2"></li>
+				</ul>
+				
+				<!-- Slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="imagens/mario-1.jpg" alt="Mario" width="1100" height="500">
+						
+						<!-- Descrição -->
+						<div class="carousel-caption">
+							<h3>Bem-vindo</h3>
+							<p>Fique à vontade para conhecer nosso site</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="imagens/mario-2.jpg" alt="Mario2" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+						<img src="imagens/astronauta.jpg" alt="astronauta" width="1100" height="500">
+					</div>
+				</div>
+				
+				<!-- Controles de direção direita/esquerda -->
+				<a class="carousel-control-prev" href="#basico" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#basico" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>				
+			</div>
+		</div><br>
+	</body>
+</html>

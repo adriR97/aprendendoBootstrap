@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Campo com ícone ou texto:</h4><br>	
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">@</span>
+				</div>
+				<input type="text" class="form-control" id="user" name="username" placeholder="Usuário">
+			</div>
+			
+			<div class="input-group mb-3">
+				<input type="text" class="form-control" placeholder="Email" id="mail" name="email">
+				<div class="input-group-append">
+					<span class="input-group-text">@gmail.com</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<br><h4>Tamanho dos grupos de entrada:</h4><br>	
+			
+			<div class="input-group mb-3 input-group-sm">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Pequeno</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Normal</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+			
+			<div class="input-group mb-3 input-group-lg">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Grande</span>
+				</div>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Múltiplas entradas:</h4><br>	
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Pessoa</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Nome">
+				<input type="text" class="form-control" placeholder="Sobrenome">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Grupo de entreada com caixa de seleção:</h4><br>	
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<input type="checkbox"> 
+					</div>
+				</div>
+				<input type="text" class="form-control" placeholder="Escreva aqui">
+			</div>
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<div class="input-group-text">
+						<input type="radio"> 
+					</div>
+				</div>
+				<input type="text" class="form-control" placeholder="Escreva aqui">
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Campo com botão:</h4><br>	
+			
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+					<button class="btn btn-outline-primary" type="button">Botão básico</button> 
+				</div>
+				<input type="text" class="form-control" placeholder="Texto">
+			</div>
+			
+			<div class="input-group mb-3">				
+				<input type="text" class="form-control" placeholder="Procurar por produtos">
+				<div class="input-group-append">
+					<button class="btn btn-primary" type="submit">Pesquisar</button> 
+				</div>
+			</div>
+			
+			<div class="input-group mb-3">				
+				<input type="text" class="form-control" placeholder="Digite uma mensagem...">
+				<div class="input-group-append">
+					<button class="btn btn-success" type="button">Enviar</button> 
+					<button class="btn btn-danger" type="button">Cancelar</button> 
+				</div>
+			</div>
+		</div><br>
+	</body>
+</html>

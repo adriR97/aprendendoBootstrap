@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Modal Básica:</h4><br>	
+			
+			<!-- Botão para abrir modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBasica">
+				Abrir modal
+			</button>
+			
+			<div class="modal" id="modalBasica">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Modal com animação:</h4><br>	
+			
+			<!-- Botão para abrir modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalComAnimacao">
+				Abrir modal
+			</button>
+			
+			<div class="modal fade" id="modalComAnimacao">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Tamanhos da modal:</h4><br>	
+			
+			<!-- Botão para abrir modal pequena -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPequena">
+				Abrir modal pequena
+			</button>
+			
+			<div class="modal fade" id="modalPequena">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+			<!-- Botão para abrir modal grande -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalGrande">
+				Abrir modal grande
+			</button>
+			
+			<div class="modal fade" id="modalGrande">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+			
+			<!-- Botão para abrir modal extra grande -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExtraGrande">
+				Abrir modal extra grande
+			</button>
+			
+			<div class="modal fade" id="modalExtraGrande">
+				<div class="modal-dialog modal-xl">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Modal Centralizada:</h4><br>	
+			
+			<!-- Botão para abrir modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCentralizada">
+				Abrir modal
+			</button>
+			
+			<div class="modal" id="modalCentralizada">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							Corpo da modal
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Modal com barra de rolagem:</h4><br>	
+			
+			<!-- Botão para abrir modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalScroll">
+				Abrir modal
+			</button>
+			
+			<div class="modal" id="modalScroll">
+				<div class="modal-dialog modal-dialog-scrollable">
+					<div class="modal-content">
+						<!-- Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Título</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- Body -->
+						<div class="modal-body">
+							<p>Corpo da modal,</p> 
+							<p>com barra de rolagem</p>
+							<p>!</p><p>!</p><p>!</p><p>!</p><p>!</p><p>!</p><p>!</p>
+							<p>!</p><p>!</p><p>!</p><p>!</p><p>!</p><p>!</p><p>!</p>
+						</div>						
+						<!-- Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div><br>
+	</body>
+</html>
