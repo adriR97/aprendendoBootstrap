@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+			
+			.border {
+				display: inline-block;
+				width: 90px;
+				height: 90px;
+				margin: 10px;
+			}
+			
+			.flutuadores {
+				border: 1px solid black;	
+				padding: 10px;
+			}
+			
+			.largura {
+				border: 1px solid black;
+				background:#87CEFA;
+				margin-bottom: 2px;
+			}
+			
+			.altura {
+				border: 1px solid black;
+				background:#87CEFA;
+				margin-right: 2px;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Bordas:</h4><br>			
+			
+			<!-- Bloco com todas as bordas -->
+			<span class="border border-primary"></span>
+			
+			<!-- Bloco sem as bordas -->
+			<span class="border border-0 border-primary"></span>
+			
+			<!-- Bloco sem a borda superior -->
+			<span class="border border-top-0 border-primary"></span>
+			
+			<!-- Bloco sem a borda da direita -->
+			<span class="border border-right-0 border-primary"></span>
+			
+			<!-- Bloco sem a borda inferior -->
+			<span class="border border-bottom-0 border-primary"></span>
+			
+			<!-- Bloco sem a borda da esquerda -->
+			<span class="border border-left-0 border-primary"></span>
+		</div>
+		
+		<div class="container">
+			<br><h4>Cor das bordas:</h4><br>			
+			
+			<span class="border border-primary"></span>
+			<span class="border border-secondary"></span>
+			<span class="border border-success"></span>
+			<span class="border border-danger"></span>
+			<span class="border border-warning"></span>
+			<span class="border border-info"></span>
+			<span class="border border-light"></span>
+			<span class="border border-dark"></span>
+			<span class="border border-white"></span>
+		</div>
+		
+		<div class="container">
+			<br><h4>Raio das bordas:</h4><br>			
+			
+			<span class="border border-primary rounded-sm"></span>
+			<span class="border border-primary rounded"></span>
+			<span class="border border-primary rounded-lg"></span>
+			<span class="border border-primary rounded-top"></span>
+			<span class="border border-primary rounded-right"></span>
+			<span class="border border-primary rounded-bottom"></span>
+			<span class="border border-primary rounded-left"></span>
+			<span class="border border-primary rounded-circle"></span>
+			<span class="border border-primary rounded-0"></span>
+		</div>
+		
+		<div class="container">
+			<br><h4>Flutuadores e Clearfix:</h4><br>
+			
+			<div class="clearfix flutuadores">
+				<!-- O clearfix é utilizado no elemento pai para limpar os flutuadores -->
+				<span class="float-left flutuadores">Float left</span>				
+				<span class="float-right flutuadores">Float right</span>
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Flutuadores Responsivos:</h4><br>
+			
+			<div class="clearfix">
+				<div class="float-sm-right">Flutuação para a direita em pequenas telas</div><br>
+				<div class="float-md-right">Flutuação para a direita em telas médias</div><br>
+				<div class="float-lg-right">Flutuação para a direita em grandes telas</div><br>
+				<div class="float-xl-right">Flutuação para a direita em telas extra grandes</div><br>
+				<div class="float-none">Sem flutuação</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Alinhamento central:</h4><br>			
+			<div class="mx-auto flutuadores" style="width:150px">Centro</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Largura de elementos:</h4><br>			
+			<div class="w-25 largura">Tamanho 25%</div>
+			<div class="w-50 largura">Tamanho 50%</div>
+			<div class="w-75 largura">Tamanho 75%</div>
+			<div class="w-100 largura">Tamanho 100%</div>
+			<div class="mw-100 largura">Tamanho máximo 100%</div>
+		</div>
+		
+		<div class="container">
+			<br><h4>Altura de elementos:</h4><br>	
+			<div style="height: 200px">
+				<div class="h-25 d-inline-block p-2 largura">Tamanho 25%</div>
+				<div class="h-50 d-inline-block p-2 largura">Tamanho 50%</div>
+				<div class="h-75 d-inline-block p-2 largura">Tamanho 75%</div>
+				<div class="h-100 d-inline-block p-2 largura">Tamanho 100%</div>
+				<div class="mh-100 d-inline-block p-2 largura" style="height:200px">Tamanho máximo 100%</div>
+			</div>			
+		</div>
+		
+		<div class="container">
+			<br><h4>Espaçamentos:</h4><br>	
+			
+			<!--
+				Telas: 
+				- xs: tela <= 576px
+				- sm: tela >= 576px
+				- md: tela >= 768px
+				- lg: tela >= 992px
+				- xl: tela >= 1200px
+				
+				Propriedades:
+				- m: margin
+				- p: padding
+				
+				Lados: 
+				- t: margin-top ou padding-top
+				- b: margin-bottom ou padding-bottom
+				- l: margin-left ou padding-left
+				- r: margin-right ou padding-right
+				- x: padding-left e padding-right ou margin-left e margin-right
+				- y: padding-top e padding-bottom ou margin-top e margin-bottom
+				- em branco: define margin ou padding para os 4 lados
+				
+				Tamanho:
+				- 0: margin ou padding 0
+				- 1: margin ou padding .25rem
+				- 2: margin ou padding .5rem
+				- 3: margin ou padding 1rem
+				- 4: margin ou padding 1.5rem
+				- 5: margin ou padding 3rem
+				- auto: define margin como automático
+				
+				Uso:
+				- xs: {propriedade}{lado}-{tamanho}
+				- sm, md, lg, xl: {propriedade}{lado}-{tela}-{tamanho}
+			-->
+			
+			<div class="m-xl-2 py-xl-4" style="background:#87CEFA">Teste</div>
+			<div class="ml-xl-4 pt-xl-5" style="background:#98FB98">Teste</div>	
+			<div class="m-xl-5 pl-xl-5" style="background:#A9BCF5">Teste</div>	
+			<div class="mr-xl-5 pb-xl-3" style="background:#CC89DD">Teste</div>	
+			<div class="my-xl-2 px-xl-3" style="background:#A057B2">Teste</div>	
+		</div>	
+	</body>
+</html>

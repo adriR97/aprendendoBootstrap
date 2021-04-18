@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+			
+			a {
+				margin-right:30px;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Popover básico:</h4><br>			
+			<a href="#" data-toggle="popover" title="Título" data-content="Exemplo de popover">Clique aqui</a>
+		</div>
+		
+		<div class="container">
+			<br><h4>Posicionamento do popover:</h4><br>			
+			<a href="#" data-toggle="popover" data-placement="top" title="Título" data-content="Exemplo de popover">Clique aqui</a>
+			<a href="#" data-toggle="popover" data-placement="bottom" title="Título" data-content="Exemplo de popover">Clique aqui</a>
+			<a href="#" data-toggle="popover" data-placement="left" title="Título" data-content="Exemplo de popover">Clique aqui</a>
+			<a href="#" data-toggle="popover" data-placement="right" title="Título" data-content="Exemplo de popover">Clique aqui</a>
+		</div>
+		
+		<div class="container">
+			<br><h4>Popover com hover:</h4><br>			
+			<a href="#" data-toggle="popover" data-trigger="hover" title="Título" data-content="Exemplo de popover">Passe o mouse</a>
+		</div>
+		
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="popover"]').popover(); 
+			});
+		</script>
+	</body>
+</html>
