@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			.container {
+				border:1px solid;
+				padding:10px;
+				margin-top:5px;
+			}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<br><h4>Filtrar tabela:</h4><br>			
+			<input class="form-control" id="filtro-pesquisa" type="text" placeholder="Pesquisar..">
+			<br>
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th>Nome</th>
+						<th>Sobrenome</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody id="registros">
+					<tr>
+						<td>Adriane</td>
+						<td>Rodrigues</td>
+						<td>dryrodrigues2009@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Mario</td>
+						<td>Dooley</td>
+						<td>mario@gmail.com</td>
+					</tr>
+					<tr>
+						<td>July</td>
+						<td>Dooley</td>
+						<td>july@gmail.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="container">
+			<br><h4>Filtrar lista:</h4><br>			
+			<input class="form-control" id="filtro-lista" type="text" placeholder="Pesquisar..">
+			<br>
+			<ul class="list-group" id="registros-lista">
+				<li class="list-group-item">Primeiro item</li>
+				<li class="list-group-item">Secundo item</li>
+				<li class="list-group-item">Terceiro item</li>
+				<li class="list-group-item">Quarto item</li>
+			</ul>
+		</div><br>
+		
+		<script>
+			$(document).ready(function() {
+				$("#filtro-pesquisa").on("keyup", function() {
+					var valor = $(this).val().toLowerCase();
+					
+					$("#registros tr").filter(function() {
+						$(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1)
+					});
+				});
+				
+				$("#filtro-lista").on("keyup", function() {
+					var itemLista = $(this).val().toLowerCase();
+					
+					$("#registros-lista li").filter(function() {
+						$(this).toggle($(this).text().toLowerCase().indexOf(itemLista) > -1)
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
