@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Paginação</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<!-- Paginação básica -->
+		<div class="container mt-4">
+			<h4 class="text-center mb-3">PAGINAÇÃO BÁSICA</h4>
+			<ul class="pagination">
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+		</div><hr>
+		
+		<!-- Paginação com ícone -->
+		<div class="container mt-4">
+			<h4 class="text-center mb-3">PAGINAÇÃO COM ÍCONE</h4>
+			<ul class="pagination">
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</div><hr>
+		
+		<!-- Página ativa e desabilitada -->
+		<div class="container mt-4">
+			<h4 class="text-center mb-3">PÁGINA ATIVA E DESABILITADA</h4>
+			<ul class="pagination">
+				<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item active"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+		</div><hr>
+		
+		<!-- Tamanho -->
+		<div class="container mt-4">
+			<h4 class="text-center mb-3">TAMANHO</h4>
+			<ul class="pagination pagination-lg">
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+			<ul class="pagination pagination-sm">
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+		</div><hr>
+		
+		<!-- Alinhamento -->
+		<div class="container mt-4">
+			<h4 class="text-center mb-3">ALINHAMENTO</h4>
+			<ul class="pagination pagination-sm">
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+			<ul class="pagination pagination-sm justify-content-center" >
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+			<ul class="pagination pagination-sm justify-content-end">
+				<li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+			</ul>
+		</div><hr>
+		
+		<!-- Breadcrumb -->
+		<div class="container my-4">
+			<h4 class="text-center mb-3">BREADCRUMB</h4>
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item"><a href="#">Produtos</a></li>
+				<li class="breadcrumb-item"><a href="#">Calçados</a></li>
+				<li class="breadcrumb-item active">Tênis</li>
+			</ul>
+		</div>
+	</body>
+</html>
